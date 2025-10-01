@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Agendamento</title>
+  <link rel="stylesheet" href="../css/styleAgendamentos.css"">
+</head>
+<body>
+  <header>
+    <h1>Novo Agendamento</h1>
+    <a class="btn-voltar" href="../pages/index.html">Voltar</a>
+    <a class="btn" href="../pages/lista.html">Ver Agendamentos</a>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Cadastrar</h2>
+      <form id="form-agendamento">
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" required>
+
+        <label for="servico">Serviço:</label>
+        <select id="servico" required>
+          <option value="">Selecione...</option>
+          <option value="Corte">Corte de Cabelo</option>
+          <option value="Progressiva">Progressiva</option>
+          <option value="Coloração">Coloração</option>
+          <option value="Penteado">Penteado</option>
+        </select>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required>
+
+        <button type="submit" class="btn">Agendar</button>
+      </form>
+      <div id="mensagem"></div>
+    </section>
+  </main>
+
+  <script type="module" src="../js/agendamentos.js"></script>
+</body>
+</html>

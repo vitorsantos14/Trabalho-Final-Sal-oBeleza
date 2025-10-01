@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #6a0dad;
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px; 
+  margin-bottom: 30px; 
+}
+
+button,
+.btn,
+.btn-voltar {
+  padding: 12px 20px;
+  background-color: #b19cd9;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 16px 4px; 
+}
+
+
+button:hover,
+.btn:hover,
+.btn-voltar:hover {
+  background-color: #d4b5f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+select {
+  padding: 1px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #b19cd9;
+  background-color: #ffffffcc;
+  color: #000;
+}
+
+table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #ffffff20;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 1px solid #ffffff30;
+  text-align: left;
+}
+
+th {
+  background-color: #4b0082;
+}
+
+td button {
+  background-color: #ffffff80;
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px 2px 4px 0;
+}
+
+td button:hover {
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    margin-bottom: 12px;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ffffff30;
+    background-color: #ffffff10;
+  }
+
+  td button {
+    display: block;
+    width: 100%;
+    margin: 6px 0 0 0;
+    text-align: center;
+  }
+}

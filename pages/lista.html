@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Agendamentos</title>
+  <link rel="stylesheet" href="../css/styleAgendamentos.css"">
+</head>
+<body>
+  <header>
+    <h1>Lista de Agendamentos</h1>
+    <a class="btn-voltar" href="../pages/agendamentos.html">Voltar</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Agendamentos</h2>
+      <div id="lista-agendamentos"></div>
+
+
+      <form id="form-edicao" style="display:none;">
+        <input type="hidden" id="editar-id">
+        <label>Cliente: <input id="editar-cliente" type="text"></label><br>
+        <label>Serviço: <input id="editar-servico" type="text"></label><br>
+        <label>Data: <input id="editar-data" type="date"></label><br>
+        <label>Hora: <input id="editar-hora" type="time"></label><br>
+        <button type="button" id="btnSalvarEdicao">Salvar</button>
+        <button type="button" id="btnCancelarEdicao">Cancelar</button>
+      </form>
+    </section>
+  </main>
+
+
+  <script type="module" src="../js/lista.js"></script>
+</body>
+</html>

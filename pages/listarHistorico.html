@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Histórico</title>
+    <a href="cadastroDeServicos.html">Voltar ao Cadastro</a>
+    <link rel="stylesheet" href="../css/cadastroDeServicos.css">
+</head>
+
+<body>
+
+    <h2>Histórico de Serviços e Produtos</h2>
+
+    <div id="listar-historico">
+        <p>Carregando histórico...</p>
+    </div>
+
+    <div id="formulario-edicao" style="display: none;">
+        <h3>Editar Histórico</h3>
+        <label for="editar-cliente">Cliente:</label>
+        <input type="text" id="editar-cliente"><br><br>
+
+        <label for="editar-servico">Serviço:</label>
+        <input type="text" id="editar-servico"><br><br>
+
+        <label for="editar-produto">Produto:</label>
+        <input type="text" id="editar-produto"><br><br>
+
+        <input type="hidden" id="editar-id">
+        <button id="btnSalvarEdicao">Salvar Alterações</button>
+        <button id="btnCancelarEdicao">Cancelar</button>
+    </div>
+
+    <script src="../js/listarHistorico.js" type="module"></script>
+</body>
+
+</html>
